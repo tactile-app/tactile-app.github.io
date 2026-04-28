@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – tacTile</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500&display=swap');
+
+    :root {
+      --cream: #f5f0ea;
+      --ink: #1a1814;
+      --muted: #6b6560;
+      --accent: #c8a97e;
+      --border: #e0d9d0;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      padding: 0 1.5rem;
+    }
+
+    .container {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 5rem 0 6rem;
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 3rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+    }
+
+    .lang-switch a {
+      color: var(--muted);
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-bottom: 2px;
+      border-bottom: 1px solid transparent;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .lang-switch a.active,
+    .lang-switch a:hover {
+      color: var(--ink);
+      border-bottom-color: var(--accent);
+    }
+
+    .app-mark {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .app-mark .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .app-mark span {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+    }
+
+    h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 400;
+      line-height: 1.2;
+      margin-bottom: 0.5rem;
+    }
+
+    .updated {
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-bottom: 3.5rem;
+      letter-spacing: 0.03em;
+    }
+
+    .divider {
+      width: 40px;
+      height: 1px;
+      background: var(--accent);
+      margin-bottom: 3.5rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 0.75rem;
+      color: var(--ink);
+    }
+
+    p {
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      font-size: 0.975rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul li {
+      font-size: 0.975rem;
+      margin-bottom: 0.4rem;
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .section-border {
+      border-top: 1px solid var(--border);
+      padding-top: 2.5rem;
+    }
+
+    footer {
+      margin-top: 5rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* English section */
+    #en { display: none; }
+    #ja { display: block; }
+
+    .active-section { display: block !important; }
+    .hidden-section { display: none !important; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="lang-switch">
+    <a href="#" class="active" onclick="switchLang('ja', this); return false;">日本語</a>
+    <a href="#" onclick="switchLang('en', this); return false;">English</a>
+  </div>
+
+  <!-- JAPANESE -->
+  <div id="ja">
+    <div class="app-mark">
+      <div class="dot"></div>
+      <span>tacTile</span>
+    </div>
+
+    <h1>プライバシー<br>ポリシー</h1>
+    <p class="updated">最終更新：2026年4月28日</p>
+    <div class="divider"></div>
+
+    <section>
+      <p>tacTile（以下「本アプリ」）は、Hiroshi Wakaokaが開発・提供するiOSアプリです。本プライバシーポリシーは、本アプリがどのような情報を収集し、どのように使用するかを説明します。</p>
+    </section>
+
+    <section class="section-border">
+      <h2>収集する情報</h2>
+      <p>本アプリは以下のデータを収集します。</p>
+
+      <p><strong>① 写真・ビデオ</strong><br>
+      ラボモードでタイルに写真を貼り付ける機能のためにのみ使用します。写真データは端末内で処理され、外部に送信されることはありません。</p>
+
+      <p><strong>② オーディオデータ（録音）</strong><br>
+      ラボモードで衝突音を作成する機能のためにのみ使用します。録音データは端末内で処理され、外部に送信されることはありません。</p>
+
+      <p><strong>③ デバイスID（IDFA）</strong><br>
+      広告配信および分析のために使用します。Google AdMob（Google LLC）がIDFAを収集し、ユーザーの個人情報に関連付けます。ユーザーはATT（App Tracking Transparency）ダイアログで許可・拒否を選択できます。</p>
+
+      <p><strong>④ 製品の操作データ</strong><br>
+      アプリの使用状況の分析および改善のために使用します。AdMobによって収集され、ユーザーの個人情報に関連付けられる場合があります。</p>
+
+      <p><strong>⑤ 広告データ</strong><br>
+      サードパーティ広告（AdMob）の配信および効果測定のために使用します。トラッキング目的で使用されます。</p>
+
+      <p><strong>⑥ クラッシュデータ</strong><br>
+      アプリの安定性向上のために使用します。個人情報への関連付けおよびトラッキング目的での使用はありません。</p>
+    </section>
+
+    <section class="section-border">
+      <h2>第三者サービス</h2>
+      <p>本アプリはGoogle AdMob（Google LLC）を使用して広告を表示しています。AdMobのプライバシーポリシーは以下をご参照ください。</p>
+      <p><a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+    </section>
+
+    <section class="section-border">
+      <h2>ATT（トラッキングの透明性）</h2>
+      <p>本アプリはAppleのATTフレームワークに対応しています。アプリ起動時にトラッキングの許可を求めるダイアログが表示されます。ユーザーはいつでもiOSの設定からトラッキングの許可を変更できます。</p>
+      <p>設定 → プライバシーとセキュリティ → トラッキング → tacTile</p>
+    </section>
+
+    <section class="section-border">
+      <h2>データの販売について</h2>
+      <p>本アプリは収集したデータを第三者に販売することはありません。</p>
+    </section>
+
+    <section class="section-border">
+      <h2>お問い合わせ</h2>
+      <p>プライバシーに関するご質問は、GitHubのIssueページからお問い合わせください。</p>
+      <p><a href="https://github.com/tactile-app" target="_blank">https://github.com/tactile-app</a></p>
+    </section>
+  </div>
+
+  <!-- ENGLISH -->
+  <div id="en">
+    <div class="app-mark">
+      <div class="dot"></div>
+      <span>tacTile</span>
+    </div>
+
+    <h1>Privacy<br>Policy</h1>
+    <p class="updated">Last updated: April 28, 2026</p>
+    <div class="divider"></div>
+
+    <section>
+      <p>tacTile (the "App") is an iOS application developed by Hiroshi Wakaoka. This Privacy Policy explains what information the App collects and how it is used.</p>
+    </section>
+
+    <section class="section-border">
+      <h2>Information We Collect</h2>
+
+      <p><strong>① Photos & Videos</strong><br>
+      Used solely to attach photos to Tiles in Lab Mode. Photo data is processed on-device and never transmitted externally.</p>
+
+      <p><strong>② Audio Data</strong><br>
+      Used solely to create collision sounds in Lab Mode. Audio recordings are processed on-device and never transmitted externally.</p>
+
+      <p><strong>③ Device ID (IDFA)</strong><br>
+      Used for advertising and analytics by Google AdMob (Google LLC). IDFA is collected and linked to the user's identity. Users may grant or deny permission via the ATT dialog shown at launch.</p>
+
+      <p><strong>④ Product Interaction Data</strong><br>
+      Used to analyze and improve app usage. Collected by AdMob and may be linked to the user's identity.</p>
+
+      <p><strong>⑤ Advertising Data</strong><br>
+      Used for third-party ad delivery (AdMob) and measurement. Used for tracking purposes.</p>
+
+      <p><strong>⑥ Crash Data</strong><br>
+      Used to improve app stability. Not linked to personal identity and not used for tracking.</p>
+    </section>
+
+    <section class="section-border">
+      <h2>Third-Party Services</h2>
+      <p>The App uses Google AdMob (Google LLC) to display advertisements. Please refer to Google's Privacy Policy:</p>
+      <p><a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+    </section>
+
+    <section class="section-border">
+      <h2>App Tracking Transparency (ATT)</h2>
+      <p>The App supports Apple's ATT framework. A tracking permission dialog is presented at launch. Users can change their tracking preference at any time in iOS Settings.</p>
+      <p>Settings → Privacy & Security → Tracking → tacTile</p>
+    </section>
+
+    <section class="section-border">
+      <h2>Data Sales</h2>
+      <p>We do not sell any collected data to third parties.</p>
+    </section>
+
+    <section class="section-border">
+      <h2>Contact</h2>
+      <p>For privacy-related inquiries, please contact us via GitHub Issues.</p>
+      <p><a href="https://github.com/tactile-app" target="_blank">https://github.com/tactile-app</a></p>
+    </section>
+  </div>
+
+  <footer>
+    <span>© 2026 Hiroshi Wakaoka</span>
+    <span>tacTile™</span>
+  </footer>
+
+</div>
+
+<script>
+  function switchLang(lang, el) {
+    document.getElementById('ja').style.display = lang === 'ja' ? 'block' : 'none';
+    document.getElementById('en').style.display = lang === 'en' ? 'block' : 'none';
+    document.querySelectorAll('.lang-switch a').forEach(a => a.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
+</body>
+</html>
